@@ -1,0 +1,90 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#fretboard {
+	border-top: 0px solid brown;
+	border-bottom: 10px solid brown;
+	border-left: 3px solid brown;
+	border-right: 1px solid brown;
+	background: #FCFCFC;
+	padding: 0px;
+	margin: 120px 0px 0px 150px;
+	transform: skew(40deg, 40deg) rotate(50deg);
+	display: flex;
+	flex-direction: row;
+	max-width: 50%;
+}
+
+.fret {
+	flex: 1 0;
+	border-right: 2px solid rgb(150, 150, 150);
+}
+
+.string {
+	padding: 3px;
+	margin: 80px 0px 80px 0px;
+	background: gray;
+	z-index: 2;
+}
+.string.selected {
+	background: tomato;
+	/*padding: 5px;*/
+}
+.stringel {
+	margin: 30px 0px 30px 0px;
+}
+.stringeh {
+	margin: 10px 0px 0px 0px;
+}
+
+.fret3, .fret5, .fret7, .fret9 {
+	background: lightyellow;
+}
+.fret12 {
+	background: #EBFF0D;
+}
+.fret15, .fret17, .fret19, .fret21 {
+	background: #F7FF9E;
+}
+
+
+.dot {
+	background: #CCCCCC;
+	width: 6px;
+	height: 48px;
+	border-radius: 50%;
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+.dot.selected {
+	display: block;
+	background: tomato;
+}
+
+.fret .dot:nth-child(11), .fret .dot:nth-child(9), .fret .dot:nth-child(7), .fret .dot:nth-child(5) {
+	margin-top: -25px;
+}
+.fret .dot:nth-child(3) {
+	margin-top: 60px;
+}
+.fret .dot:nth-child(1) {
+	margin-top: -5px;
+}
+
+#controls {
+	display: flex;
+	margin-bottom: 100px;
+	flex-direction: row;
+}
+#controls .step {
+	flex: 1 1;
+	padding: 5px;
+	background: tomato;
+	margin: 3px;
+}
+#controls .step.selected {
+	background: orange;
+}
