@@ -1,3 +1,6 @@
+##Planitjs Guitar Tab
+It's a flavor of planitjs for processing guitar tab plan files.
+
 ##Arguments
 ###Name
 First argument is the name of the tablature.

@@ -12,8 +12,9 @@ module.exports = function (contents, args, fs, clc, path) {
 		return 0;
 	}
 
-	steps = [];
+	var steps = [];
 
+	// Go through the file line by line
 	contents.split('\n').forEach((line) => {
 		if (line.length >= 1) {
 			// Split the line into comma separated pieces
